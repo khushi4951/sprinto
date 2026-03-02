@@ -6,73 +6,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
-    { pattern: /^bg-/ },
-    { pattern: /^text-/ },
-    { pattern: /^border-/ },
-    { pattern: /^from-/ },
-    { pattern: /^to-/ },
-    { pattern: /^via-/ },
-    { pattern: /^rounded-/ },
-    { pattern: /^p-/ },
-    { pattern: /^px-/ },
-    { pattern: /^py-/ },
-    { pattern: /^m-/ },
-    { pattern: /^mx-/ },
-    { pattern: /^my-/ },
-    { pattern: /^flex/ },
-    { pattern: /^grid/ },
-    { pattern: /^gap-/ },
-    { pattern: /^w-/ },
-    { pattern: /^h-/ },
-    { pattern: /^max-w-/ },
-    { pattern: /^min-/ },
-    { pattern: /^font-/ },
-    { pattern: /^leading-/ },
-    { pattern: /^tracking-/ },
-    { pattern: /^opacity-/ },
-    { pattern: /^shadow-/ },
-    { pattern: /^overflow-/ },
-    { pattern: /^z-/ },
-    { pattern: /^inset-/ },
-    { pattern: /^top-/ },
-    { pattern: /^bottom-/ },
-    { pattern: /^left-/ },
-    { pattern: /^right-/ },
-    { pattern: /^translate-/ },
-    { pattern: /^scale-/ },
-    { pattern: /^transition/ },
-    { pattern: /^duration-/ },
-    { pattern: /^animate-/ },
-    { pattern: /^cursor-/ },
-    { pattern: /^hidden/ },
-    { pattern: /^block/ },
-    { pattern: /^inline/ },
-    { pattern: /^absolute/ },
-    { pattern: /^relative/ },
-    { pattern: /^fixed/ },
-    { pattern: /^sticky/ },
-    { pattern: /^items-/ },
-    { pattern: /^justify-/ },
-    { pattern: /^col-/ },
-    { pattern: /^shrink/ },
-    { pattern: /^grow/ },
-    { pattern: /^truncate/ },
-    { pattern: /^backdrop-/ },
-    { pattern: /^blur-/ },
-    { pattern: /^space-/ },
-    { pattern: /^divide-/ },
-    { pattern: /^aspect-/ },
-    { pattern: /^order-/ },
-    { pattern: /^basis-/ },
-    { pattern: /^place-/ },
-    { pattern: /^content-/ },
-    { pattern: /^sm:/ },
-    { pattern: /^md:/ },
-    { pattern: /^lg:/ },
-    { pattern: /^xl:/ },
-    { pattern: /^hover:/ },
-    { pattern: /^focus:/ },
-    { pattern: /^group-/ },
+    // Background colors
+    { pattern: /^bg-\[#[\dA-Fa-f]{6}\]$/ },
+    // Border colors
+    { pattern: /^border-\[#[\dA-Fa-f]{6}\]$/ },
+    // Text colors
+    { pattern: /^text-\[#[\dA-Fa-f]{6}\]$/ },
+    // Opacity modifiers
+    { pattern: /^opacity-\d+$/ },
+    { pattern: /^(bg|border|text)-(brand|surface|green)-\d+$/ },
   ],
   theme: {
     extend: {
@@ -82,23 +24,38 @@ module.exports = {
       },
       colors: {
         brand: {
-          300: '#a5b4fc',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          900: '#312e81',
+          300: '
+#a5b4fc',
+          400: '
+#818cf8',
+          500: '
+#6366f1',
+          600: '
+#4f46e5',
+          900: '
+#312e81',
         },
         surface: {
-          50:  '#f8fafc',
-          100: '#94a3b8',
-          200: '#64748b',
-          300: '#475569',
-          400: '#334155',
-          500: '#1e2433',
-          600: '#111827',
-          700: '#0d1117',
-          800: '#0a0d14',
-          900: '#080b12',
+          50:  '
+#f8fafc',
+          100: '
+#94a3b8',
+          200: '
+#64748b',
+          300: '
+#475569',
+          400: '
+#334155',
+          500: '
+#1e2433',
+          600: '
+#111827',
+          700: '
+#0d1117',
+          800: '
+#0a0d14',
+          900: '
+#080b12',
         },
       },
       backgroundImage: {
@@ -131,4 +88,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}; 
