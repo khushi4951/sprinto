@@ -130,18 +130,6 @@ sprinto/
 └── middleware.js                   # Clerk auth middleware
 ```
 
-## 🎓 Backend Topics Covered
-
-This project aligns with the following curriculum topics:
-
-1. **Client-Server Architecture** — Next.js API routes as the server layer
-2. **Node.js Environment** — npm scripts, file modules, dependencies
-3. **Node.js Advantages** — Non-blocking I/O, single-threaded event loop
-4. **HTTP & Modules** — REST API endpoints, NPM modules
-5. **Express Equivalent** — Next.js App Router as the framework layer
-6. **Routing** — Dynamic routes, route parameters (`[id]`), route handlers
-7. **Middleware** — Clerk middleware, auth checks, request lifecycle
-8. **Body Parser** — JSON request handling in API routes
 
 ## 📝 License
 
